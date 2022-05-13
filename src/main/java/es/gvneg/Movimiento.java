@@ -6,7 +6,7 @@ public abstract class Movimiento {
 	
 	private String concepto;
 	private float importe;
-	private LocalDateTime fechaDateTime;
+	private LocalDateTime fecha;
 	
 	public String getConcepto() {
 		return concepto;
@@ -24,22 +24,21 @@ public abstract class Movimiento {
 		this.importe = importe;
 	}
 	
-	public LocalDateTime getFechaDateTime() {
-		return fechaDateTime;
+	public LocalDateTime getFecha() {
+		return fecha;
 	}
 	
-	public void setFechaDateTime(LocalDateTime fechaDateTime) {
-		this.fechaDateTime = fechaDateTime;
+	public void setFechaDateTime(LocalDateTime fecha) {
+		this.fecha = fecha;
 	}
 	
 	public Movimiento() {
 		super();
 	}
 	
-	public Movimiento(String concepto, float importe, LocalDateTime fechaDateTime) {
-		super();
+	public Movimiento(String concepto, float importe, LocalDateTime fecha) {
 		this.concepto = concepto;
 		this.importe = importe;
-		this.fechaDateTime = fechaDateTime;
+		this.fecha = fecha;
 	}
 }
