@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public abstract class Movimiento {
 	
 	private String concepto;
-	private float importe;
+	float importe;
 	private LocalDate fecha;
 	
 	public String getConcepto() {

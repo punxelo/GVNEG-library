@@ -32,4 +32,12 @@ public class Cuenta {
 		this.nombreCuenta = nombreCuenta;
 		this.movimientos = movimientos;
 	}
+	
+	  public float getBalance() {
+		    float balance  = 0;
+		    for (Movimiento movimiento : getMovimientos()) {
+		      balance += movimiento.importe;
+		    }
+		    return balance;
+		  }
 }
